@@ -35,8 +35,12 @@ jobs:
         bundle install
         yarn install --check-files
     - name: Setup database
+      env:
+        RAILS_ENV: test
       run: |
         cp config/database.yml.ci config/database.yml
         bundle exec rails db:setup
     - name: Run tests
+      env:
+        RAILS_ENV: test
       run: bundle exec rails test
