@@ -35,8 +35,6 @@ jobs:
         bundle install
         yarn install --check-files
     - name: Setup database
-      env:
-        DATABASE_URL: 'postgres://shelf:shelf@localhost/shelf_test'
       run: |
         cp config/database.yml.ci config/database.yml
         bundle exec rails db:setup
