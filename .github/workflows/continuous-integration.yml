@@ -1,4 +1,4 @@
-name: Rails Tests
+name: Continuous Integration
 
 on:
   push:
