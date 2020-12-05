@@ -31,7 +31,9 @@ jobs:
       with:
         bundler-cache: true
     - name: Install dependencies
-      run: bundle install
+      run: -
+        bundle install
+        yarn install --check-files
     - name: Setup database
       env:
         DATABASE_URL: 'postgres://shelf:@localhost/shelf'
