@@ -35,4 +35,10 @@ class BookTest < ActiveSupport::TestCase
 
     assert_equal book.errors[:rating], ["must be less than or equal to 10"]
   end
+
+  test "has_and_belongs_to_many bookshelves" do
+    book = books(:neuromancer)
+
+    assert_not_empty book.bookshelves
+  end
 end

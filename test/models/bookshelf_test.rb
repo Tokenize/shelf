@@ -14,4 +14,10 @@ class BookshelfTest < ActiveSupport::TestCase
 
     assert_equal shelf.errors[:name], ["can't be blank"]
   end
+
+  test "has_and_belongs_to_many books" do
+    shelf = bookshelves(:science_fiction)
+
+    assert_not_empty shelf.books
+  end
 end
