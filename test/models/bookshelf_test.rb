@@ -7,4 +7,11 @@ class BookshelfTest < ActiveSupport::TestCase
 
     assert shelf.errors[:name].present?
   end
+
+  test "requires user_id" do
+    shelf = Bookshelf.new
+    shelf.validate
+
+    assert_equal shelf.errors[:name], ["can't be blank"]
+  end
 end

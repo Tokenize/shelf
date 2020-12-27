@@ -8,6 +8,13 @@ class BookTest < ActiveSupport::TestCase
     assert_equal book.errors[:title], ["can't be blank"]
   end
 
+  test "requires bookshelf_id" do
+    book = Book.new
+    book.validate
+
+    assert_equal book.errors[:bookshelf_id], ["can't be blank"]
+  end
+
   test "enforces numericality for rating" do
     book = Book.new(title: 'foo', rating: 'a')
     book.validate
