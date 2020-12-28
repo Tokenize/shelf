@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+neuromancer:
+  title: Neuromancer
+  isbn: 12345678
+  synopsis: Case teams up with Molly to return to his old hacker days.
+  notes: A great science-fiction book!
+  completed: true
+  completed_on: 2011-12-10
+  rating: 9
+  bookshelves: science_fiction
+
+snowcrash:
+  title: Snow Crash
+  isbn: 87654321
+  synopsis: Hiro Protagonist is a hacker and pizza delivery driver for the Mafia.
+  notes: Sumerian language as firmware programming language, cool!
+  completed: true
+  completed_on: 2012-02-21
+  rating: 8
+  bookshelves: highest_rated
+
+cryptonomicon:
+  title: Cryptonomicon
+  isbn: 87654321
+  synopsis: Cryptonomicon is a 1999 novel by American author Neal Stephenson, set in two different time periods.
+  notes: A cool but very long book.
+  completed: false
+  completed_on:
+  rating: 0
+  bookshelves: highest_rated

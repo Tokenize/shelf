@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+science_fiction:
+  name: Science fiction
+  description: A shelf full of great books!
+  user: jane
+
+highest_rated:
+  name: Highest rated books
+  description: A shelf full of my highest rated books.
+  user: john
